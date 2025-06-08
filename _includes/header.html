@@ -1,0 +1,11 @@
+<header class="site-header">
+  <h1 class="site-title">{{ site.data.theme.title }}</h1>
+  <p class="site-subtitle">{{ site.data.theme.subtitle }}</p>
+  <nav>
+    <ul>
+      {% for item in site.data.navigation.main %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

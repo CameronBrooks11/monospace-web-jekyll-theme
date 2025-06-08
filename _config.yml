@@ -1,0 +1,8 @@
+# File: _config.yml
+title: "Monospace Web Jekyll Theme Preview"
+theme: monospace-web-jekyll-theme
+plugins:
+  - jekyll-toc
+toc:
+  min_level: 2
+  max_level: 4

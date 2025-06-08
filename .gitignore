@@ -1,8 +1,21 @@
-/.bundle/
-/.yardoc
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
+# Ruby gems & Bundler
+*.gem
+.bundle/
+
+# Jekyll build artifacts / caches
+_site/
+.jekyll-cache/
+assets/.jekyll-cache/
+.sass-cache/
+
+# Node
+/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.DS_Store
+.env

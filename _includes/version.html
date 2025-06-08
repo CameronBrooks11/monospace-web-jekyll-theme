@@ -1,0 +1,24 @@
+<table class="theme-metadata">
+  <tr>
+    <th>Theme</th>
+    <td colspan="3">{{ site.data.theme.themename }}</td>
+    <td rowspan="3" class="theme-metadata__toggle-cell">
+      <br />
+      <br />
+      {% include debug-toggle.html %}
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <th>Version</th>
+    <td>v{{ site.data.theme.version }}</td>
+    <th>Updated</th>
+    <td>{{ site.data.theme.updated }}</td>
+  </tr>
+  <tr>
+    <th>Author</th>
+    <td><cite>{{ site.data.theme.author }}</cite></td>
+    <th>License</th>
+    <td>{{ site.data.theme.license }}</td>
+  </tr>
+</table>

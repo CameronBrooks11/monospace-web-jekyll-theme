@@ -1,43 +1,50 @@
-# Monospace::Web::Jekyll::Theme
+# monospace-web-jekyll-theme
 
-TODO: Delete this and the text below, and describe your gem
+A minimal Jekyll theme that automatically vendors CSS/JS from [monospace-web-theme](https://npmjs.com/package/monospace-web-theme).
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/monospace/web/jekyll/theme`. To experiment with that code, run `bin/console` for an interactive prompt.
+> add some sample content and run `bundle exec jekyll serve`
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your Jekyll site's `Gemfile`:
 
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem "monospace-web-jekyll-theme"
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+And add this line to your Jekyll site's `_config.yml`:
 
-```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```yaml
+theme: monospace-web-jekyll-theme
 ```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install monospace-web-jekyll-theme
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/monospace-web-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/monospace-web-jekyll-theme/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/CameronBrooks11/monospace-web-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+To fetch the monospace-web-theme from npm, run `npm install`. Next run: `npm ci` to install exactly the versions from package-lock.json for a clean, reproducible build; then run: `npm run vendor` to copy the .min.css and .min.js files from node_modules/monospace-web-theme into your assets/css and assets/js directories.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `monospace-web-jekyll-theme.gemspec` accordingly.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Monospace::Web::Jekyll::Theme project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/monospace-web-jekyll-theme/blob/master/CODE_OF_CONDUCT.md).
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

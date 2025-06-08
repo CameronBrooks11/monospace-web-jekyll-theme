@@ -1,0 +1,16 @@
+{
+    "name": "monospace-web-jekyll-theme",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "monospace-web-theme": "^1.0.1"
+    },
+    "devDependencies": {
+        "mkdirp": "^3.0.1",
+        "copyfiles": "^2.4.1"
+    },
+    "scripts": {
+        "prevendor": "mkdirp assets/css assets/js",
+        "vendor": "copyfiles -u 3 \"node_modules/monospace-web-theme/dist/*.min.css\" assets/css && copyfiles -u 3 \"node_modules/monospace-web-theme/dist/*.min.js\" assets/js"
+    }
+}
