@@ -2,8 +2,6 @@
 
 A minimal Jekyll theme that automatically vendors CSS/JS from [monospace-web-theme](https://npmjs.com/package/monospace-web-theme).
 
-> add some sample content and run `bundle exec jekyll serve`
-
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
