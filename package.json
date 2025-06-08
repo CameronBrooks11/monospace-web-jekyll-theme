@@ -1,7 +1,6 @@
 {
     "name": "monospace-web-jekyll-theme",
     "version": "0.1.0",
-    "private": true,
     "dependencies": {
         "monospace-web-theme": "^1.0.1"
     },
