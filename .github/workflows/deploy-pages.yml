@@ -32,7 +32,7 @@ jobs:
       - name: Vendor monospace assets
         run: npm run vendor
 
-      - uses: ruby/setup-ruby@1
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
           bundler-cache: true
