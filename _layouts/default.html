@@ -13,8 +13,10 @@
     <br />
     {% include footer.html %}
     <br />
-    {% include theme-infobox.html %}
-    {% include debug-grid.html %}
+    {% if site.theme_options.show_theme_box %}
+        {% include theme-infobox.html %}
+        {% include debug-toggle.html %}
+    {% endif %}
     <script defer src="{{ '/assets/js/monospace.min.js' | relative_url }}"></script>
 </body>
 

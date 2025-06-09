@@ -28,6 +28,17 @@ Or install it yourself as:
 
 TODO: Write usage instructions here. Describe your available layouts, includes and/or assets.
 
+## Config Keys
+
+```yml
+# In the *site* that consumes your theme
+theme: monospace-web-jekyll-theme
+
+theme_options:
+  show_theme_box: false # turn off the info box
+  show_debug_grid_toggle: true # enable the debug‐grid toggle
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/CameronBrooks11/monospace-web-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.

@@ -39,7 +39,6 @@ This preview demonstrates headings, lists, tables, forms, grids, ASCII art, and 
   <input readonly value="4" />
 </div>
 
-
 ## ASCII Drawings
 
 We can draw in `<pre>` tags using [box-drawing characters](https://en.wikipedia.org/wiki/Box-drawing_characters):
