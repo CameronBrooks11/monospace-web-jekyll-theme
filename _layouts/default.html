@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}" {% comment %} only emit data-theme if non-empty {%
-    endcomment %} {% assign chosen=page.theme | default: site.theme_options.default_theme | default: '' %} {% if chosen
-    !='' %} data-theme="{{ chosen }}" {% endif %}>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" {% assign chosen=page.theme | default:
+    site.theme_options.default_theme | default: '' %} {% if chosen !='' %} data-theme="{{ chosen }}" {% endif %}>
 
 <head>
     {% include head.html %}
 </head>
 
 <body>
-    {% include header.html %}
+    <header class="site-header">
+        {% include header.html %}
+    </header>
 
     <main>
+
+        <!-- ─── your page content ─────────────────────────────────────────────── -->
         {{ content }}
+
+        <!-- ─── debug-grid container (needed by monospace.js) ─────────────────── -->
+        <div class="debug-grid"></div>
     </main>
 
-    <br />
-    {% include footer.html %}
-    <br />
+    <footer class="site-footer">
+        <br>
+        {% include footer.html %}
+
+    </footer>
+
+    <br>
+
+    <!-- ─── grid overlay toggle ──────────────────────────────────────────── -->
+    <div class="theme-metadata__toggle-cell">
+        {% include debug-toggle.html %}
+    </div>
 
     {% if site.theme_options.show_theme_box %}
     {% include theme-infobox.html %}
-    {% include debug-toggle.html %}
     {% endif %}
 
+    <!-- monospace-grid JS helper (must come *after* your toggles + container) -->
     <script defer src="{{ '/assets/js/monospace.min.js' | relative_url }}"></script>
 </body>
 

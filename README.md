@@ -1,6 +1,6 @@
 # monospace-web-jekyll-theme
 
-A minimal Jekyll theme that automatically vendors CSS/JS from [monospace-web-theme](https://npmjs.com/package/monospace-web-theme).
+A minimal Jekyll theme that automatically vendors CSS/JS from [monospace-web-theme](https://npmjs.com/package/monospace-web-theme). Published as a [RubyGem](https://rubygems.org/gems/monospace-web-jekyll-theme).
 
 ## Installation
 

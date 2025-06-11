@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "monospace-web-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.3"
   spec.authors       = ["Cameron K Brooks"]
   spec.email         = ["cambrooks3393@gmail.com"]
 

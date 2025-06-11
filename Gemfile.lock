@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    monospace-web-jekyll-theme (0.1.0)
+    monospace-web-jekyll-theme (0.1.2)
       jekyll (~> 4.4)
 
 GEM
