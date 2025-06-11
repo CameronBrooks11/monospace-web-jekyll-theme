@@ -2,4 +2,4 @@ title: "Monospace Web Jekyll Theme Preview"
 theme: monospace-web-jekyll-theme
 theme_options:
   show_theme_box: true
-  default_theme: terminal
+  default_theme: ""

@@ -54,6 +54,22 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 When your theme is released, only the files in `_layouts`, `_includes` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `monospace-web-jekyll-theme.gemspec` accordingly.
 
+## Publishing
+
+Run:
+
+```bash
+gem build monospace-web-jekyll-theme.gemspec
+```
+
+then:
+
+```bash
+gem push monospace-web-jekyll-theme-x.y.z.gem
+```
+
+where `x.y.z` should be replaced by the corresponding version number.
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
