@@ -36,8 +36,44 @@ theme: monospace-web-jekyll-theme
 
 theme_options:
   show_theme_box: false # turn off the info box
-  show_debug_grid_toggle: true # enable the debug‐grid toggle
 ```
+
+### GitHub Pages / `remote_theme` Setup
+
+By default, Pages won’t copy your theme’s vendored CSS/JS into the published site, so to get all colour flavours working (e.g. `data-theme="rose"`), use the built-in remote_theme support:
+
+1. **Install the remote-theme plugin**  
+   In your Gemfile:
+
+   ```ruby
+   group :jekyll_plugins do
+     gem "jekyll-feed", "~> 0.12"
+     gem "jekyll-remote-theme"
+   end
+   ```
+
+   Then run:
+
+   ```bash
+   bundle install
+   ```
+
+2. Configure
+
+   In your \_config.yml:
+
+   ```yaml
+   remote_theme: CameronBrooks11/monospace-web-jekyll-theme
+   plugins:
+     - jekyll-feed
+     - jekyll-remote-theme
+
+   theme_options:
+     default_theme: rose
+     show_theme_box: true
+   ```
+
+3. Omit or remove the gem "monospace-web-jekyll-theme" line (your theme will now be pulled directly from GitHub).
 
 ## Contributing
 
